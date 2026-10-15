@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: #111;
+    background-color: #fffaf6;
+}
+
+.card {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 28px;
+    background-color: #fff;
+    border: 1px solid #eadfd7;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.icone {
+    width: 82px;
+    height: 82px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #2878f0;
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.descricao {
+    margin: 0 0 22px;
+    color: #444;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #2878f0;
+    outline-offset: 1px;
+}
+
+button {
+    padding: 12px 20px;
+    border: 2px solid #222;
+    border-radius: 6px;
+    background-color: #c6f12b;
+    color: #111;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b5df22;
+}
+
+.resultados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid #eee;
+}
+
+.resultados p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.resultados strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .icone {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
