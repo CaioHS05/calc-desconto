@@ -12,7 +12,7 @@ form.addEventListener("submit", function(e) {
     if (total < 2008) {
         tDesconto = total;
     }
-    else if (total >= 50 && total < 100) {
+    else if (total >= 2008 && total < 5000) {
         desconto = total * 0.05;
         tDesconto = total - desconto;
     }
